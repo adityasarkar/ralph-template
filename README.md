@@ -75,6 +75,28 @@ This works because:
 
 ---
 
+## Custom Commands Included
+
+This template includes two custom commands I built to make the workflow easier:
+
+### `/prd` - Create Your Product Requirements Document
+
+This command walks you through creating a PRD by asking questions **one at a time**. It covers:
+- What problem you're solving
+- Who your users are
+- What features you need
+- Technical decisions (platform, data, auth, etc.)
+
+**Take your time here.** The PRD is the foundation of everything. The better you describe your idea, the better the AI will build it. Don't rush through the questions - really think about each answer. A 30-minute PRD can save you hours of fixing things later.
+
+### `/plan` - Convert Your PRD to a Task List
+
+Once you have a PRD, this command reads it and automatically generates a structured `plan.md` file. It breaks your project into small, buildable tasks that the AI can complete one at a time.
+
+You don't have to manually create the JSON task list - the `/plan` command does it for you.
+
+---
+
 ## Prerequisites
 
 Before starting, make sure you have:
