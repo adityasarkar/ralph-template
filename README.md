@@ -2,8 +2,6 @@
 
 A ready-to-use template for building apps autonomously with Claude Code.
 
----
-
 ## Warning: This Runs in YOLO Mode
 
 This template uses `--dangerously-skip-permissions` which means **Claude will execute any command without asking**. This is required for fully autonomous operation, but you should understand the risks:
@@ -20,10 +18,8 @@ This template uses `--dangerously-skip-permissions` which means **Claude will ex
 
 This is the tradeoff for "set it and forget it" autonomous building.
 
----
-
-## Getting Started (2 minutes)
-
+## Quick Start Guide
+Just to show you how easy this is with the claude /commands, I'll go into more detail next
 ### Step 1: Download This Template
 
 1. Click the green **"Code"** button above
@@ -69,11 +65,9 @@ claude
 
 That's it! Ralph will build your app task by task.
 
----
+## Now the details
 
-## What Is This?
-
-**Ralph Wiggum** is a method for getting Claude Code to build your application autonomously. Instead of you writing code line-by-line, you:
+**Ralph Wiggum** is a method for getting Claude Code to build your application autonomously. Instead of you vibe coding prompt-by-prompt, you:
 
 1. Describe what you want to build
 2. Let the AI create a structured plan
@@ -105,15 +99,15 @@ This command walks you through creating a PRD by asking questions **one at a tim
 - What features you need
 - Technical decisions (platform, data, auth, etc.)
 
-**Take your time here.** The PRD is the foundation of everything. The better you describe your idea, the better the AI will build it. Don't rush through the questions - really think about each answer. A 30-minute PRD can save you hours of fixing things later.
+**Take your time here.** The PRD is the foundation of everything. The better you describe your idea, the better the AI will build it. Don't rush through the questions - really think about each answer. I suggest answering with a voice to text tool so that you give the AI as much detail as possible.
 
 ### `/plan` - Convert Your PRD to a Task List
 
-Once you have a PRD, this command reads it and automatically generates a structured `plan.md` file. It breaks your project into small, buildable tasks that the AI can complete one at a time.
+Once you have a PRD, this command reads it and automatically generates a structured `plan.md` file. It breaks your project into small, buildable tasks that the AI can complete one at a time. Apparently, Anthropic prefers this JSON format.
 
 You don't have to manually create the JSON task list - the `/plan` command does it for you.
 
----
+# Detailed step by step guide to getting Claude Code to build while you sleep aka Ralph Wigguming
 
 ## Prerequisites
 
@@ -139,9 +133,7 @@ Before starting, make sure you have:
 
 If any of these are missing, ask Claude Code to help you install them!
 
----
-
-## What's In This Template
+## What's in this template you're downloading
 
 ```
 ralph_template/
@@ -160,7 +152,7 @@ ralph_template/
 
 ---
 
-## The Files Explained
+## The files explained
 
 ### `PROMPT.md` - The Agent's Instructions
 
@@ -199,7 +191,8 @@ This is a JSON file (a structured data format) that lists all the tasks to build
 
 Every time the AI completes a task, it writes what it did here. This is your history of what happened.
 
-**Why it exists:** If something goes wrong, you can look here to see what the AI did. It's also helpful for understanding how your app was built.
+**Why it exists:** If something goes wrong, you can look here to see what the AI did. It's also helpful for understanding how your app was built. 
+**While your Ralph is ralphing, you can open this in your code editor to see what it's done so far**
 
 ### `ralph.sh` - The Loop Script
 
