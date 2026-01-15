@@ -6,7 +6,7 @@ Convert the PRD into a structured plan.md file for autonomous execution.
 
 1. **Read the PRD file** in the current directory (look for `PRD-*.md`)
 2. **Extract all features and requirements**
-3. **Create plan.md** with the exact JSON format below
+3. **Create plan.md** with the exact JSON format below, if the plan.md file already exists, replace it.
 
 ## plan.md Format
 

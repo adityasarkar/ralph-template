@@ -4,6 +4,24 @@ A ready-to-use template for building apps autonomously with Claude Code.
 
 ---
 
+## Warning: This Runs in YOLO Mode
+
+This template uses `--dangerously-skip-permissions` which means **Claude will execute any command without asking**. This is required for fully autonomous operation, but you should understand the risks:
+
+- The AI can run any bash command
+- The AI can read/write/delete any files it can access
+- The AI can install packages and make network requests
+
+**Recommendations:**
+- Only run this in a dedicated project folder
+- Don't store sensitive files (API keys, passwords) in the project
+- Review the code after Ralph finishes before deploying anything
+- Consider running in a VM or container if you're extra cautious
+
+This is the tradeoff for "set it and forget it" autonomous building.
+
+---
+
 ## Getting Started (2 minutes)
 
 ### Step 1: Download This Template

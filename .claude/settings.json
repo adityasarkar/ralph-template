@@ -13,7 +13,8 @@
       "Bash(docker *)",
       "Read(~/.ssh/**)",
       "Read(~/.aws/**)"
-    ]
+    ],
+    "defaultMode": "bypassPermissions"
   },
   "sandbox": {
     "enabled": true,
