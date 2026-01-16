@@ -9,8 +9,8 @@
       "mcp__playwright__*"
     ],
     "deny": [
-      "Bash(sudo *)",
-      "Bash(docker *)",
+      "Bash(sudo:*)",
+      "Bash(docker:*)",
       "Read(~/.ssh/**)",
       "Read(~/.aws/**)"
     ],
